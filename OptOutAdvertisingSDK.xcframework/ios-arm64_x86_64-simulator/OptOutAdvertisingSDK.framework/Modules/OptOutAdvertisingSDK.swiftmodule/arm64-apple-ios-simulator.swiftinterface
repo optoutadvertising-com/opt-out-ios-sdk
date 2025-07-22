@@ -1,0 +1,52 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 effective-4.1.50 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name OptOutAdvertisingSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AdSupport
+import AppTrackingTransparency
+import Combine
+import CoreLocation
+import Foundation
+import Network
+@_exported import OptOutAdvertisingSDK
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct Environment {
+}
+public struct AdSlot {
+  public let name: Swift.String
+  public let customParams: [Swift.String : Swift.String]?
+  public init(name: Swift.String, customParams: [Swift.String : Swift.String]? = nil)
+}
+public struct AdDetail {
+  public let adSlot: Swift.String
+  public let width: Swift.Int
+  public let height: Swift.Int
+  public let html: Swift.String
+  public let noScaling: Swift.Bool
+  public let noSafeFrame: Swift.Bool
+  public let tags: [Swift.String]
+}
+@available(iOS 13, *)
+public struct OptOutAdvertising {
+  public static func initialize(publisherId: Swift.String, lazyLoadOffset: CoreFoundation.CGFloat = 200)
+  public static func initialize(publisherId: Swift.String, environment: OptOutAdvertisingSDK.Environment, lazyLoadOffset: CoreFoundation.CGFloat = 200)
+  public static func updateTransparencyAndConsent(isGdprRequired: Swift.Bool, tcfString: Swift.String)
+  public static func registerMultipleAdSlots(adSlots: [OptOutAdvertisingSDK.AdSlot])
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13, *)
+@_Concurrency.MainActor(unsafe) public class OptOutAdView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func configure(adSlot: Swift.String, maxSize: CoreFoundation.CGSize)
+  @_Concurrency.MainActor(unsafe) public func configure(adSlot: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func loadAd(completionHandler: ((_ ad: OptOutAdvertisingSDK.AdDetail) -> ())? = nil, failedHandler: ((_ error: any Swift.Error) -> ())? = nil)
+  @_Concurrency.MainActor(unsafe) public func addCustomParam(key: Swift.String, value: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func removeCustomParam(key: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func setOnHeightChangedListener(listener: @escaping (_ newHeight: CoreFoundation.CGFloat) -> ())
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}

@@ -1,0 +1,11 @@
+framework module OptOutAdvertisingSDK {
+  umbrella header "OptOutAdvertisingSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module OptOutAdvertisingSDK.Swift {
+  header "OptOutAdvertisingSDK-Swift.h"
+  requires objc
+}
