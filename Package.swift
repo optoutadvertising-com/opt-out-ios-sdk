@@ -19,10 +19,20 @@ let package = Package(
 			targets: ["OptOutAdvertisingSDK"]
 		)
 	],
+	dependencies: [
+		.package(url: "https://github.com/optoutadvertising-com/om-ios-sdk.git", from: "1.5.5")
+	],
 	targets: [
-		.binaryTarget(
+		.target(
 			name: "OptOutAdvertisingSDK",
-			url: "https://github.com/optoutadvertising-com/ios-sdk/releases/download/\(PackageMetadata.version)/OptOutAdvertisingSDK.xcframework.zip",
+			dependencies: [
+				.target(name: "OptOutAdvertisingSDKBinary"),
+				.product(name: "OMSDK_Pinchnl", package: "om-ios-sdk")
+			]
+		),
+		.binaryTarget(
+			name: "OptOutAdvertisingSDKBinary",
+			url: "https://github.com/optoutadvertising-com/opt-out-ios-sdk/releases/download/\(PackageMetadata.version)/OptOutAdvertisingSDK.xcframework.zip",
 			checksum: PackageMetadata.checksum
 		)
 	]
