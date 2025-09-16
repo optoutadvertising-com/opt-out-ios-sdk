@@ -4,7 +4,7 @@
 import PackageDescription
 
 struct PackageMetadata {
-	static let version = "2.0.1"
+	static let version = "2.0.2"
 	static let checksum = "2e30e3fc12676ce3c303a7fd330cd868cdde9c567755789ac8f830abea29d411"
 }
 
@@ -15,8 +15,8 @@ let package = Package(
 	],
 	products: [
 		.library(
-			name: "OptOutAdvertisingSDK",
-			targets: ["OptOutAdvertisingSDK"]
+			name: "OptOutAdvertising",
+			targets: ["OptOutAdvertising"]
 		)
 	],
 	dependencies: [
@@ -24,11 +24,12 @@ let package = Package(
 	],
 	targets: [
 		.target(
-			name: "OptOutAdvertisingSDK",
+			name: "OptOutAdvertising",
 			dependencies: [
 				.target(name: "OptOutAdvertisingSDKBinary"),
 				.product(name: "OMSDK_Pinchnl", package: "om-ios-sdk")
-			]
+			],
+			path: "Sources/OptOutAdvertisingSDK"
 		),
 		.binaryTarget(
 			name: "OptOutAdvertisingSDKBinary",
