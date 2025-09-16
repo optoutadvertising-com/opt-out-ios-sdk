@@ -1,0 +1,75 @@
+
+<html>
+	<head>
+		<title>Test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+		<div id="imageContainer">
+			<img src="https://developers.google.com/admob/images/ios-testad-0.png?hl=nl" width="300" height="250"/>
+		</div>
+		<script>
+			window.mraid = mraid;
+
+			function doReadyCheck() {
+
+				mraid.log("MRAID: Ready Check");
+
+				if (mraid.getState() == "loading") {
+
+					mraid.log("MRAID: Loading State");
+
+					//Wait until mraid library is ready and loaded so listen for ready event
+					mraid.addEventListener("ready", mraidIsReady);
+				}
+				else {
+					mraid.log("MRAID: Ready State");
+					showMyAd();
+				}
+			}
+
+			function addEvent(evnt, elem, func) {
+				if (elem.addEventListener) { // W3C DOM
+					elem.addEventListener(evnt, func, false);
+				} else if (elem.attachEvent) { // IE DOM
+					elem.attachEvent("on" + evnt, func);
+				} else { // No much to do
+					elem[evnt] = func;
+				}
+			}
+
+			function showMyAd() {
+
+				var adContainer = document.querySelector('#imageContainer');
+
+				addEvent("click", adContainer , function (e) {
+					e.preventDefault();
+					mraid.open('http://media.sanoma.fi');
+					return false;
+				});
+			}
+
+			function mraidIsReady() {
+				mraid.log("MRAID: Ready, showing ad");
+				mraid.removeEventListener("ready", mraidIsReady);
+				showMyAd();
+			}
+
+			function makeUnsupportedMraidCall() {
+				mraid.log("makeUnsupportedMraidCall");
+				mraid.somethingUnsupported();
+			}
+
+			doReadyCheck();
+
+			makeUnsupportedMraidCall();
+		</script>
+	</body>
+</html>
+
