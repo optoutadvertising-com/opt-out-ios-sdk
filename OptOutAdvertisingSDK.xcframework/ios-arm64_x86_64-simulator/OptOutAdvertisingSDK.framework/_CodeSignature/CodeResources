@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		k2WZnxMiuf0JhB6g0pxfwNFwdBQ=
+		xqIHJke/H7lDXhT57CZLTiGL4NU=
 		</data>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		jltVOL5OCRJds7nO2A+DvCSI5fg=
+		8ClXqAeq82WYwrlFRTbd+rDUjcM=
 		</data>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		A1CmH838b/Rryv7Nadd5y7Lq5bQ=
+		JLN3xpeau2GUSTrPIa4tQo5fNNk=
 		</data>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		y1eUaUA6F4MSAZwLf+QWOfGzX90=
+		jQI/4eqeh1Hn+gkkcB7JTbgJr78=
 		</data>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		A1CmH838b/Rryv7Nadd5y7Lq5bQ=
+		JLN3xpeau2GUSTrPIa4tQo5fNNk=
 		</data>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oW5YpoFGX5kStNLetmC/bEtr5cM=
+		PBenzphHYGj4cnW6fR0j0dNBbdY=
 		</data>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jltVOL5OCRJds7nO2A+DvCSI5fg=
+		8ClXqAeq82WYwrlFRTbd+rDUjcM=
 		</data>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		v/8UP1eE0SIyrjFhnklGFt/XgVs=
+		i5tSP9RijEFYSM/+cd2nU6ONDY4=
 		</data>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		W9QZNbX6JhLIrEqDTM5q7ua1D78=
+		APLcT7VCgxXV3GOUZCTFEnUNwOQ=
 		</data>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		v/8UP1eE0SIyrjFhnklGFt/XgVs=
+		i5tSP9RijEFYSM/+cd2nU6ONDY4=
 		</data>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Jy6h3M5HD8zzldzA6ukDBOyjeIE=
+		DRcWJgZo3Q+rZ7WMVF/lJzDx7/E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -93,70 +93,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4nVRCFPmbKXeMb+lutxKAVR5BddBmHppyc1KPfaCQl8=
+			9aBh1+yfvBfpoghj41oM/pGyfB2msxUvz6c+ShafdZI=
 			</data>
 		</dict>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2i7rBbCQgzpAKUbjDxUr4FuPrCSxHcXHjmmN8/nTFPE=
+			Q7+h8KdyUqigQ8NJm5zvjnrFFtE7n1FH6J7VrNGOdl8=
 			</data>
 		</dict>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0OJrEwIjEy7frJDfmXnXuiZTWhNBMiPfLtJV8Vme3mo=
+			WsUHDq8dDXrYKyjpB2PpG+BotKJBPLSdFq0XewfYX50=
 			</data>
 		</dict>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2i7rBbCQgzpAKUbjDxUr4FuPrCSxHcXHjmmN8/nTFPE=
+			Q7+h8KdyUqigQ8NJm5zvjnrFFtE7n1FH6J7VrNGOdl8=
 			</data>
 		</dict>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LvPjWcNb/zIXy3yu/iX35iKzf67e0HOryWmgrEy7W/Y=
+			Fk1sMOO8NNH6rPelSz2Pirpk3E7kEVSpX+8hujRMQzY=
 			</data>
 		</dict>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4nVRCFPmbKXeMb+lutxKAVR5BddBmHppyc1KPfaCQl8=
+			9aBh1+yfvBfpoghj41oM/pGyfB2msxUvz6c+ShafdZI=
 			</data>
 		</dict>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d/sD1AyiMWPTNyQzs8tp4uZfdCRA2IcsZgyMz614s/s=
+			8/oJktfuc9j5KuZMa3o24Y2YDXuPA46IwpHih6gJU/A=
 			</data>
 		</dict>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EWXci0chSvFSSz3jpMrjINWqIyX2AvX/ZH4IhYo+uTg=
+			zyw4g6iQz7DXslHOlZKXblTgMViLBFJJ94rrp4bWC+c=
 			</data>
 		</dict>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d/sD1AyiMWPTNyQzs8tp4uZfdCRA2IcsZgyMz614s/s=
+			8/oJktfuc9j5KuZMa3o24Y2YDXuPA46IwpHih6gJU/A=
 			</data>
 		</dict>
 		<key>Modules/OptOutAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2GkyOIm62nv/+zBUye9wjwshfQ8SAa3L6HyUktkFtJ8=
+			7vp6YZ1HBJx5gpfMtTHqEew58joyTFZXlzaA0yVzbSI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

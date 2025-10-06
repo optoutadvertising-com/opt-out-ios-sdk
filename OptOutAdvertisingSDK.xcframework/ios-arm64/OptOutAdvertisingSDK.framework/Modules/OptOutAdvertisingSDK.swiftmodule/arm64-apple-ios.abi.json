@@ -1304,7 +1304,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(adSlot:deeplinkToAdScreen:maxSize:onLoad:onError:onHeightUpdate:)",
+            "printedName": "init(adSlot:deeplinkToAdScreen:maxSize:onLoad:onError:onHeightUpdate:onWidthUpdate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1428,11 +1428,38 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CoreGraphics.CGFloat) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:20OptOutAdvertisingSDK0aB2AdV6adSlot010deeplinkToE6Screen7maxSize6onLoad0M5Error0M12HeightUpdateACSS_SSSgSo6CGSizeVSgyAA0E6DetailVcSgys0O0_pcSgy14CoreFoundation7CGFloatVcSgtcfc",
-            "mangledName": "$s20OptOutAdvertisingSDK0aB2AdV6adSlot010deeplinkToE6Screen7maxSize6onLoad0M5Error0M12HeightUpdateACSS_SSSgSo6CGSizeVSgyAA0E6DetailVcSgys0O0_pcSgy12CoreGraphics7CGFloatVcSgtcfc",
+            "usr": "s:20OptOutAdvertisingSDK0aB2AdV6adSlot010deeplinkToE6Screen7maxSize6onLoad0M5Error0M12HeightUpdate0m5WidthQ0ACSS_SSSgSo6CGSizeVSgyAA0E6DetailVcSgys0O0_pcSgy14CoreFoundation7CGFloatVcSgAWtcfc",
+            "mangledName": "$s20OptOutAdvertisingSDK0aB2AdV6adSlot010deeplinkToE6Screen7maxSize6onLoad0M5Error0M12HeightUpdate0m5WidthQ0ACSS_SSSgSo6CGSizeVSgyAA0E6DetailVcSgys0O0_pcSgy12CoreGraphics7CGFloatVcSgAWtcfc",
             "moduleName": "OptOutAdvertisingSDK",
             "declAttributes": [
               "Preconcurrency",
@@ -2136,6 +2163,47 @@
             "declKind": "Func",
             "usr": "s:20OptOutAdvertisingSDK0aB6AdViewC26setOnHeightChangedListener8listeneryy14CoreFoundation7CGFloatVc_tF",
             "mangledName": "$s20OptOutAdvertisingSDK0aB6AdViewC26setOnHeightChangedListener8listeneryy12CoreGraphics7CGFloatVc_tF",
+            "moduleName": "OptOutAdvertisingSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setOnWidthChangedListener",
+            "printedName": "setOnWidthChangedListener(listener:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CoreGraphics.CGFloat) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OptOutAdvertisingSDK0aB6AdViewC25setOnWidthChangedListener8listeneryy14CoreFoundation7CGFloatVc_tF",
+            "mangledName": "$s20OptOutAdvertisingSDK0aB6AdViewC25setOnWidthChangedListener8listeneryy12CoreGraphics7CGFloatVc_tF",
             "moduleName": "OptOutAdvertisingSDK",
             "declAttributes": [
               "Preconcurrency",
@@ -3138,469 +3206,469 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/Dto\/AdConfigDto.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Dto\/AdConfigDto.swift",
       "kind": "StringLiteral",
       "offset": 440,
       "length": 14,
       "value": "\"gdpr_consent\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/Dto\/AdConfigDto.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Dto\/AdConfigDto.swift",
       "kind": "StringLiteral",
       "offset": 598,
       "length": 13,
       "value": "\"sdk_version\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/Dto\/AdDetailDto.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Dto\/AdDetailDto.swift",
       "kind": "StringLiteral",
       "offset": 198,
       "length": 11,
       "value": "\"optOutExt\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Repository\/Impl\/AdRepositoryImpl.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Repository\/Impl\/AdRepositoryImpl.swift",
       "kind": "Dictionary",
       "offset": 291,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Repository\/Impl\/AdRepositoryImpl.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Repository\/Impl\/AdRepositoryImpl.swift",
       "kind": "Dictionary",
       "offset": 349,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/API.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/API.swift",
       "kind": "Dictionary",
       "offset": 429,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/API.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/API.swift",
       "kind": "Dictionary",
       "offset": 1076,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/API.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/API.swift",
       "kind": "Dictionary",
       "offset": 2816,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Utils\/AtomicProperty.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Utils\/AtomicProperty.swift",
       "kind": "StringLiteral",
       "offset": 482,
       "length": 16,
       "value": "\"AtomicProperty\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Utils\/AtomicProperty.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Utils\/AtomicProperty.swift",
       "kind": "IntegerLiteral",
       "offset": 523,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Utils\/AtomicProperty.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Utils\/AtomicProperty.swift",
       "kind": "IntegerLiteral",
       "offset": 527,
       "length": 6,
       "value": "100000"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/Events\/BridgeEvent.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/Events\/BridgeEvent.swift",
       "kind": "StringLiteral",
       "offset": 144,
       "length": 11,
       "value": "\"add-event\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/Events\/BridgeEvent.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/Events\/BridgeEvent.swift",
       "kind": "StringLiteral",
       "offset": 176,
       "length": 14,
       "value": "\"remove-event\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 199,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 248,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 299,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 347,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
       "kind": "StringLiteral",
       "offset": 148,
       "length": 17,
       "value": "\"\/prebid\/display\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
       "kind": "StringLiteral",
       "offset": 182,
       "length": 16,
       "value": "\"\/optoutconsent\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
       "kind": "StringLiteral",
       "offset": 213,
       "length": 14,
       "value": "\"\/event\/mraid\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 13,
       "value": "\"\/sdk\/ios.js\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Config\/Environment.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Config\/Environment.swift",
       "kind": "StringLiteral",
       "offset": 383,
       "length": 27,
       "value": "\"prebid.optinadserving.com\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Config\/Environment.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Config\/Environment.swift",
       "kind": "StringLiteral",
       "offset": 457,
       "length": 50,
       "value": "\"private-29a1c4-optoutadvertising.apiary-mock.com\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 60,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 82,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 112,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 137,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 153,
       "length": 9,
       "value": "\"OPTIONS\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 178,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 200,
       "length": 6,
       "value": "\"HEAD\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 223,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 268,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 294,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 7,
       "value": "\"TRACE\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 347,
       "length": 9,
       "value": "\"CONNECT\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "StringLiteral",
       "offset": 198,
       "length": 7,
       "value": "\"mraid\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "StringLiteral",
       "offset": 241,
       "length": 27,
       "value": "\"cdn.optoutadvertising.com\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 376,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "FloatLiteral",
       "offset": 677,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "FloatLiteral",
       "offset": 718,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1417,
+      "offset": 1485,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1467,
+      "offset": 1535,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2235,
+      "offset": 2303,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2355,
+      "offset": 2423,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "StringLiteral",
-      "offset": 2545,
+      "offset": 2613,
       "length": 50,
       "value": "\"bridge.state = '\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "StringLiteral",
-      "offset": 2592,
+      "offset": 2660,
       "length": 28,
       "value": "\"';\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "StringLiteral",
-      "offset": 2770,
+      "offset": 2838,
       "length": 37,
       "value": "\"bridge.viewableChange(\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "StringLiteral",
-      "offset": 2805,
+      "offset": 2873,
       "length": 1,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
       "kind": "StringLiteral",
       "offset": 64,
       "length": 9,
       "value": "\"loading\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
       "kind": "StringLiteral",
       "offset": 98,
       "length": 9,
       "value": "\"default\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
       "kind": "StringLiteral",
       "offset": 128,
       "length": 10,
       "value": "\"expanded\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
       "kind": "StringLiteral",
       "offset": 158,
       "length": 9,
       "value": "\"resized\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
       "kind": "StringLiteral",
       "offset": 186,
       "length": 8,
       "value": "\"hidden\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/OpenMeasurement\/OpenMeasurementManager.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/OpenMeasurement\/OpenMeasurementManager.swift",
       "kind": "StringLiteral",
       "offset": 599,
       "length": 9,
       "value": "\"Pinchnl\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/OptOutAdvertising.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/OptOutAdvertising.swift",
       "kind": "IntegerLiteral",
       "offset": 1111,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/OptOutAdvertising.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/OptOutAdvertising.swift",
       "kind": "IntegerLiteral",
       "offset": 1821,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 468,
+      "offset": 460,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 506,
+      "offset": 498,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 745,
+      "offset": 829,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3307,
+      "offset": 3391,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/OptOutNativeAd.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutNativeAd.swift",
       "kind": "Dictionary",
       "offset": 365,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/OptOutNativeAdView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutNativeAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 939,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Views\/OptOutNativeAdView.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutNativeAdView.swift",
       "kind": "Dictionary",
       "offset": 1381,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Data\/RejectionsDaoImpl.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Data\/RejectionsDaoImpl.swift",
       "kind": "StringLiteral",
       "offset": 149,
       "length": 26,
       "value": "\"OptOutGamblingPreference\""
     },
     {
-      "filePath": "\/Users\/wkulik\/repositories\/optout-sdk\/OptOutAdvertisingSDK\/Source\/Utils\/VisibilityObserver.swift",
+      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Utils\/VisibilityObserver.swift",
       "kind": "FloatLiteral",
       "offset": 262,
       "length": 3,

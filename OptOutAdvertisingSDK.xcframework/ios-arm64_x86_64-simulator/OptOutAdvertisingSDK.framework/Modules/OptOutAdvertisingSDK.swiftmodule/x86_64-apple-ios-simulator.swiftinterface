@@ -43,7 +43,7 @@ public struct AdSlot {
 public struct Environment {
 }
 @_Concurrency.MainActor @preconcurrency public struct OptOutAd : SwiftUI.UIViewRepresentable {
-  @_Concurrency.MainActor @preconcurrency public init(adSlot: Swift.String, deeplinkToAdScreen: Swift.String? = nil, maxSize: CoreFoundation.CGSize? = nil, onLoad: ((OptOutAdvertisingSDK.AdDetail) -> Swift.Void)? = nil, onError: ((any Swift.Error) -> Swift.Void)? = nil, onHeightUpdate: ((CoreFoundation.CGFloat) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(adSlot: Swift.String, deeplinkToAdScreen: Swift.String? = nil, maxSize: CoreFoundation.CGSize? = nil, onLoad: ((OptOutAdvertisingSDK.AdDetail) -> Swift.Void)? = nil, onError: ((any Swift.Error) -> Swift.Void)? = nil, onHeightUpdate: ((CoreFoundation.CGFloat) -> Swift.Void)? = nil, onWidthUpdate: ((CoreFoundation.CGFloat) -> Swift.Void)? = nil)
   @_Concurrency.MainActor @preconcurrency public func makeUIView(context: OptOutAdvertisingSDK.OptOutAd.Context) -> OptOutAdvertisingSDK.OptOutAdView
   @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: OptOutAdvertisingSDK.OptOutAdView, context: OptOutAdvertisingSDK.OptOutAd.Context)
   public typealias Body = Swift.Never
@@ -66,6 +66,7 @@ public struct OptOutAdvertising {
   @_Concurrency.MainActor @preconcurrency public func addCustomParam(key: Swift.String, value: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func removeCustomParam(key: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func setOnHeightChangedListener(listener: @escaping (_ newHeight: CoreFoundation.CGFloat) -> ())
+  @_Concurrency.MainActor @preconcurrency public func setOnWidthChangedListener(listener: @escaping (_ newHeight: CoreFoundation.CGFloat) -> ())
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)

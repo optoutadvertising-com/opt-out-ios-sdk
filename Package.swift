@@ -4,8 +4,8 @@
 import PackageDescription
 
 struct PackageMetadata {
-	static let version = "2.0.2"
-	static let checksum = "2e30e3fc12676ce3c303a7fd330cd868cdde9c567755789ac8f830abea29d411"
+	static let version = "2.0.3" // IMPORTANT: also adjust version in dependencies section
+	static let checksum = "aa80b746f3140b267e2258b7bf0b3cd550b8ef9c6b91f6b8847202686ccdc664"
 }
 
 let package = Package(
@@ -20,7 +20,7 @@ let package = Package(
 		)
 	],
 	dependencies: [
-		.package(url: "https://github.com/optoutadvertising-com/om-ios-sdk.git", from: "1.5.5")
+		.package(url: "https://github.com/optoutadvertising-com/om-ios-sdk.git", from: "2.0.3")
 	],
 	targets: [
 		.target(
