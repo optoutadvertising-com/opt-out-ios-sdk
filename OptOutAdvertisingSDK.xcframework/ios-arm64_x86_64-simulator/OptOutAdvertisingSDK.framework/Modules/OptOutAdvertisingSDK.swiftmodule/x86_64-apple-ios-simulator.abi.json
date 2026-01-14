@@ -861,6 +861,66 @@
           },
           {
             "kind": "Var",
+            "name": "preview",
+            "printedName": "preview",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20OptOutAdvertisingSDK6AdSlotV7previewSSSgvp",
+            "mangledName": "$s20OptOutAdvertisingSDK6AdSlotV7previewSSSgvp",
+            "moduleName": "OptOutAdvertisingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20OptOutAdvertisingSDK6AdSlotV7previewSSSgvg",
+                "mangledName": "$s20OptOutAdvertisingSDK6AdSlotV7previewSSSgvg",
+                "moduleName": "OptOutAdvertisingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "customParams",
             "printedName": "customParams",
             "children": [
@@ -950,7 +1010,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:customParams:)",
+            "printedName": "init(name:preview:customParams:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -963,6 +1023,21 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -995,8 +1070,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:20OptOutAdvertisingSDK6AdSlotV4name12customParamsACSS_SDyS2SGSgtcfc",
-            "mangledName": "$s20OptOutAdvertisingSDK6AdSlotV4name12customParamsACSS_SDyS2SGSgtcfc",
+            "usr": "s:20OptOutAdvertisingSDK6AdSlotV4name7preview12customParamsACSS_SSSgSDyS2SGSgtcfc",
+            "mangledName": "$s20OptOutAdvertisingSDK6AdSlotV4name7preview12customParamsACSS_SSSgSDyS2SGSgtcfc",
             "moduleName": "OptOutAdvertisingSDK",
             "declAttributes": [
               "AccessControl"
@@ -1120,6 +1195,16 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "OptOutAdvertisingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "OptOutAdvertisingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -1304,7 +1389,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(adSlot:deeplinkToAdScreen:maxSize:onLoad:onError:onHeightUpdate:onWidthUpdate:)",
+            "printedName": "init(adSlot:preview:deeplinkToAdScreen:maxSize:doNotResizeToView:onLoad:onError:onHeightUpdate:onWidthUpdate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1336,6 +1421,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "CoreFoundation.CGSize?",
                 "children": [
                   {
@@ -1347,6 +1447,13 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -1458,8 +1565,128 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:20OptOutAdvertisingSDK0aB2AdV6adSlot010deeplinkToE6Screen7maxSize6onLoad0M5Error0M12HeightUpdate0m5WidthQ0ACSS_SSSgSo6CGSizeVSgyAA0E6DetailVcSgys0O0_pcSgy14CoreFoundation7CGFloatVcSgAWtcfc",
-            "mangledName": "$s20OptOutAdvertisingSDK0aB2AdV6adSlot010deeplinkToE6Screen7maxSize6onLoad0M5Error0M12HeightUpdate0m5WidthQ0ACSS_SSSgSo6CGSizeVSgyAA0E6DetailVcSgys0O0_pcSgy12CoreGraphics7CGFloatVcSgAWtcfc",
+            "usr": "s:20OptOutAdvertisingSDK0aB2AdV6adSlot7preview010deeplinkToE6Screen7maxSize011doNotResizeJ4View6onLoad0R5Error0R12HeightUpdate0r5WidthV0ACSS_SSSgAMSo6CGSizeVSgSbyAA0E6DetailVcSgys0T0_pcSgy14CoreFoundation7CGFloatVcSgAYtcfc",
+            "mangledName": "$s20OptOutAdvertisingSDK0aB2AdV6adSlot7preview010deeplinkToE6Screen7maxSize011doNotResizeJ4View6onLoad0R5Error0R12HeightUpdate0r5WidthV0ACSS_SSSgAMSo6CGSizeVSgSbyAA0E6DetailVcSgys0T0_pcSgy12CoreGraphics7CGFloatVcSgAYtcfc",
+            "moduleName": "OptOutAdvertisingSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adDetail:deeplinkToAdScreen:maxSize:doNotResizeToView:onHeightUpdate:onWidthUpdate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptOutAd",
+                "printedName": "OptOutAdvertisingSDK.OptOutAd",
+                "usr": "s:20OptOutAdvertisingSDK0aB2AdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdDetail",
+                "printedName": "OptOutAdvertisingSDK.AdDetail",
+                "usr": "s:20OptOutAdvertisingSDK8AdDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGSize?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CoreGraphics.CGFloat) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CoreGraphics.CGFloat) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreGraphics.CGFloat) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20OptOutAdvertisingSDK0aB2AdV8adDetail010deeplinkToE6Screen7maxSize011doNotResizeI4View14onHeightUpdate0q5WidthS0AcA0eG0V_SSSgSo6CGSizeVSgSby14CoreFoundation7CGFloatVcSgAStcfc",
+            "mangledName": "$s20OptOutAdvertisingSDK0aB2AdV8adDetail010deeplinkToE6Screen7maxSize011doNotResizeI4View14onHeightUpdate0q5WidthS0AcA0eG0V_SSSgSo6CGSizeVSgSby12CoreGraphics7CGFloatVcSgAStcfc",
             "moduleName": "OptOutAdvertisingSDK",
             "declAttributes": [
               "Preconcurrency",
@@ -1638,6 +1865,23 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "OptOutAdvertisingSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "OptOutAdvertisingSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "OptOutAdvertising",
         "printedName": "OptOutAdvertising",
@@ -1787,6 +2031,149 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(slot:preview:customParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<OptOutAdvertisingSDK.AdDetail, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdDetail",
+                    "printedName": "OptOutAdvertisingSDK.AdDetail",
+                    "usr": "s:20OptOutAdvertisingSDK8AdDetailV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OptOutAdvertisingSDK0abC0V6loadAd4slot7preview12customParams7Combine12AnyPublisherVyAA0F6DetailVs5Error_pGSS_SSSgSDyS2SGtFZ",
+            "mangledName": "$s20OptOutAdvertisingSDK0abC0V6loadAd4slot7preview12customParams7Combine12AnyPublisherVyAA0F6DetailVs5Error_pGSS_SSSgSDyS2SGtFZ",
+            "moduleName": "OptOutAdvertisingSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(slot:preview:customParams:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdDetail",
+                "printedName": "OptOutAdvertisingSDK.AdDetail",
+                "usr": "s:20OptOutAdvertisingSDK8AdDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OptOutAdvertisingSDK0abC0V6loadAd4slot7preview12customParamsAA0F6DetailVSS_SSSgSDyS2SGtYaKFZ",
+            "mangledName": "$s20OptOutAdvertisingSDK0abC0V6loadAd4slot7preview12customParamsAA0F6DetailVSS_SSSgSDyS2SGtYaKFZ",
+            "moduleName": "OptOutAdvertisingSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -1899,18 +2286,12 @@
           {
             "kind": "Function",
             "name": "configure",
-            "printedName": "configure(adSlot:deeplinkToAdScreen:maxSize:)",
+            "printedName": "configure(adSlot:preview:deeplinkToAdScreen:maxSize:doNotResizeToView:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -1929,38 +2310,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CGSize",
-                "printedName": "CoreFoundation.CGSize",
-                "usr": "c:@S@CGSize"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:20OptOutAdvertisingSDK0aB6AdViewC9configure6adSlot010deeplinkToE6Screen7maxSizeySS_SSSgSo6CGSizeVtF",
-            "mangledName": "$s20OptOutAdvertisingSDK0aB6AdViewC9configure6adSlot010deeplinkToE6Screen7maxSizeySS_SSSgSo6CGSizeVtF",
-            "moduleName": "OptOutAdvertisingSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "configure",
-            "printedName": "configure(adSlot:deeplinkToAdScreen:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -1976,11 +2337,33 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreFoundation.CGSize?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20OptOutAdvertisingSDK0aB6AdViewC9configure6adSlot010deeplinkToE6ScreenySS_SSSgtF",
-            "mangledName": "$s20OptOutAdvertisingSDK0aB6AdViewC9configure6adSlot010deeplinkToE6ScreenySS_SSSgtF",
+            "usr": "s:20OptOutAdvertisingSDK0aB6AdViewC9configure6adSlot7preview010deeplinkToE6Screen7maxSize011doNotResizelF0ySSSg_A2JSo6CGSizeVSgSbtF",
+            "mangledName": "$s20OptOutAdvertisingSDK0aB6AdViewC9configure6adSlot7preview010deeplinkToE6Screen7maxSize011doNotResizelF0ySSSg_A2JSo6CGSizeVSgSbtF",
             "moduleName": "OptOutAdvertisingSDK",
             "declAttributes": [
               "Preconcurrency",
@@ -2058,6 +2441,35 @@
             "declKind": "Func",
             "usr": "s:20OptOutAdvertisingSDK0aB6AdViewC04loadE017completionHandler06failedI0yyAA0E6DetailVcSg_ys5Error_pcSgtF",
             "mangledName": "$s20OptOutAdvertisingSDK0aB6AdViewC04loadE017completionHandler06failedI0yyAA0E6DetailVcSg_ys5Error_pcSgtF",
+            "moduleName": "OptOutAdvertisingSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(adDetail:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdDetail",
+                "printedName": "OptOutAdvertisingSDK.AdDetail",
+                "usr": "s:20OptOutAdvertisingSDK8AdDetailV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OptOutAdvertisingSDK0aB6AdViewC04showE08adDetailyAA0eI0V_tF",
+            "mangledName": "$s20OptOutAdvertisingSDK0aB6AdViewC04showE08adDetailyAA0eI0V_tF",
             "moduleName": "OptOutAdvertisingSDK",
             "declAttributes": [
               "Preconcurrency",
@@ -2417,7 +2829,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(adSlot:customParameters:deeplinkToAdScreen:onLoad:onError:viewFactory:)",
+            "printedName": "init(adSlot:preview:customParameters:deeplinkToAdScreen:onLoad:onError:viewFactory:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2434,9 +2846,32 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2562,8 +2997,78 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:20OptOutAdvertisingSDK0aB8NativeAdV6adSlot16customParameters010deeplinkToF6Screen6onLoad0N5Error11viewFactoryACyxGSS_SDyS2SGSSSgyAA0F6DetailVcSgys0P0_pcSgxAKctcfc",
-            "mangledName": "$s20OptOutAdvertisingSDK0aB8NativeAdV6adSlot16customParameters010deeplinkToF6Screen6onLoad0N5Error11viewFactoryACyxGSS_SDyS2SGSSSgyAA0F6DetailVcSgys0P0_pcSgxAKctcfc",
+            "usr": "s:20OptOutAdvertisingSDK0aB8NativeAdV6adSlot7preview16customParameters010deeplinkToF6Screen6onLoad0O5Error11viewFactoryACyxGSSSg_ALSDyS2SGALyAA0F6DetailVcSgys0Q0_pcSgxAMctcfc",
+            "mangledName": "$s20OptOutAdvertisingSDK0aB8NativeAdV6adSlot7preview16customParameters010deeplinkToF6Screen6onLoad0O5Error11viewFactoryACyxGSSSg_ALSDyS2SGALyAA0F6DetailVcSgys0Q0_pcSgxAMctcfc",
+            "moduleName": "OptOutAdvertisingSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<ViewType where ViewType : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adDetail:viewFactory:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OptOutNativeAd",
+                "printedName": "OptOutAdvertisingSDK.OptOutNativeAd<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:20OptOutAdvertisingSDK0aB8NativeAdV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdDetail",
+                "printedName": "OptOutAdvertisingSDK.AdDetail",
+                "usr": "s:20OptOutAdvertisingSDK8AdDetailV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20OptOutAdvertisingSDK0aB8NativeAdV8adDetail11viewFactoryACyxGAA0fH0V_xSDyS2SGctcfc",
+            "mangledName": "$s20OptOutAdvertisingSDK0aB8NativeAdV8adDetail11viewFactoryACyxGAA0fH0V_xSDyS2SGctcfc",
             "moduleName": "OptOutAdvertisingSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
             "sugared_genericSig": "<ViewType where ViewType : SwiftUI.View>",
@@ -2819,7 +3324,7 @@
           {
             "kind": "Function",
             "name": "configure",
-            "printedName": "configure(adSlot:customParamaters:deeplinkToAdScreen:)",
+            "printedName": "configure(adSlot:preview:customParamaters:deeplinkToAdScreen:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2828,9 +3333,32 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2870,8 +3398,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20OptOutAdvertisingSDK0aB12NativeAdViewC9configure6adSlot16customParamaters010deeplinkToF6ScreenySS_SDyS2SGSSSgtF",
-            "mangledName": "$s20OptOutAdvertisingSDK0aB12NativeAdViewC9configure6adSlot16customParamaters010deeplinkToF6ScreenySS_SDyS2SGSSSgtF",
+            "usr": "s:20OptOutAdvertisingSDK0aB12NativeAdViewC9configure6adSlot7preview16customParamaters010deeplinkToF6ScreenySSSg_AISDyS2SGAItF",
+            "mangledName": "$s20OptOutAdvertisingSDK0aB12NativeAdViewC9configure6adSlot7preview16customParamaters010deeplinkToF6ScreenySSSg_AISDyS2SGAItF",
             "moduleName": "OptOutAdvertisingSDK",
             "declAttributes": [
               "Final",
@@ -2987,6 +3515,68 @@
               "Final",
               "Preconcurrency",
               "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showAd",
+            "printedName": "showAd(adDetail:viewFactory:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdDetail",
+                "printedName": "OptOutAdvertisingSDK.AdDetail",
+                "usr": "s:20OptOutAdvertisingSDK8AdDetailV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> UIKit.UIView",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20OptOutAdvertisingSDK0aB12NativeAdViewC04showF08adDetail11viewFactoryyAA0fJ0V_So6UIViewCSDyS2SGctF",
+            "mangledName": "$s20OptOutAdvertisingSDK0aB12NativeAdViewC04showF08adDetail11viewFactoryyAA0fJ0V_So6UIViewCSDyS2SGctF",
+            "moduleName": "OptOutAdvertisingSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -3220,469 +3810,511 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Dto\/AdConfigDto.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/Dto\/AdConfigDto.swift",
       "kind": "StringLiteral",
       "offset": 440,
       "length": 14,
       "value": "\"gdpr_consent\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Dto\/AdConfigDto.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/Dto\/AdConfigDto.swift",
       "kind": "StringLiteral",
       "offset": 598,
       "length": 13,
       "value": "\"sdk_version\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Dto\/AdDetailDto.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/Dto\/AdDetailDto.swift",
       "kind": "StringLiteral",
       "offset": 198,
       "length": 11,
       "value": "\"optOutExt\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Repository\/Impl\/AdRepositoryImpl.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Repository\/Impl\/AdRepositoryImpl.swift",
       "kind": "Dictionary",
       "offset": 291,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Repository\/Impl\/AdRepositoryImpl.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Repository\/Impl\/AdRepositoryImpl.swift",
       "kind": "Dictionary",
       "offset": 349,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/API.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/API.swift",
       "kind": "Dictionary",
       "offset": 429,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/API.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/API.swift",
       "kind": "Dictionary",
       "offset": 1076,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/API.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/API.swift",
       "kind": "Dictionary",
       "offset": 2816,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Utils\/AtomicProperty.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Utils\/AtomicProperty.swift",
       "kind": "StringLiteral",
       "offset": 482,
       "length": 16,
       "value": "\"AtomicProperty\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Utils\/AtomicProperty.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Utils\/AtomicProperty.swift",
       "kind": "IntegerLiteral",
       "offset": 523,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Utils\/AtomicProperty.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Utils\/AtomicProperty.swift",
       "kind": "IntegerLiteral",
       "offset": 527,
       "length": 6,
       "value": "100000"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/Events\/BridgeEvent.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/Events\/BridgeEvent.swift",
       "kind": "StringLiteral",
       "offset": 144,
       "length": 11,
       "value": "\"add-event\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/Events\/BridgeEvent.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/Events\/BridgeEvent.swift",
       "kind": "StringLiteral",
       "offset": 176,
       "length": 14,
       "value": "\"remove-event\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 199,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 248,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 299,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
       "kind": "BooleanLiteral",
       "offset": 347,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Consent\/ConsentManager.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
       "kind": "StringLiteral",
       "offset": 148,
       "length": 17,
       "value": "\"\/prebid\/display\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
       "kind": "StringLiteral",
       "offset": 182,
       "length": 16,
       "value": "\"\/optoutconsent\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
       "kind": "StringLiteral",
       "offset": 213,
       "length": 14,
       "value": "\"\/event\/mraid\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/Endpoint.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 13,
       "value": "\"\/sdk\/ios.js\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Config\/Environment.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Config\/Environment.swift",
       "kind": "StringLiteral",
       "offset": 383,
       "length": 27,
       "value": "\"prebid.optinadserving.com\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Config\/Environment.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Config\/Environment.swift",
       "kind": "StringLiteral",
       "offset": 457,
       "length": 50,
       "value": "\"private-29a1c4-optoutadvertising.apiary-mock.com\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 60,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 82,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 112,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Domain\/Error\/ErrorCode.swift",
       "kind": "IntegerLiteral",
       "offset": 137,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 153,
       "length": 9,
       "value": "\"OPTIONS\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 178,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 200,
       "length": 6,
       "value": "\"HEAD\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 223,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 268,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 294,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 7,
       "value": "\"TRACE\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 347,
       "length": 9,
       "value": "\"CONNECT\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "StringLiteral",
       "offset": 198,
       "length": 7,
       "value": "\"mraid\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "StringLiteral",
       "offset": 241,
       "length": 27,
       "value": "\"cdn.optoutadvertising.com\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "IntegerLiteral",
       "offset": 376,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "FloatLiteral",
       "offset": 677,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "FloatLiteral",
       "offset": 718,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1485,
+      "offset": 912,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1535,
+      "offset": 1264,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2303,
+      "offset": 1314,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2423,
+      "offset": 2082,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2202,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "StringLiteral",
-      "offset": 2613,
+      "offset": 2392,
       "length": 50,
       "value": "\"bridge.state = '\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "StringLiteral",
-      "offset": 2660,
+      "offset": 2439,
       "length": 28,
       "value": "\"';\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "StringLiteral",
-      "offset": 2838,
+      "offset": 2617,
       "length": 37,
       "value": "\"bridge.viewableChange(\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidBridgeWebView.swift",
       "kind": "StringLiteral",
-      "offset": 2873,
+      "offset": 2652,
       "length": 1,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
       "kind": "StringLiteral",
       "offset": 64,
       "length": 9,
       "value": "\"loading\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
       "kind": "StringLiteral",
       "offset": 98,
       "length": 9,
       "value": "\"default\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
       "kind": "StringLiteral",
       "offset": 128,
       "length": 10,
       "value": "\"expanded\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
       "kind": "StringLiteral",
       "offset": 158,
       "length": 9,
       "value": "\"resized\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/Bridge\/MraidState.swift",
       "kind": "StringLiteral",
       "offset": 186,
       "length": 8,
       "value": "\"hidden\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/OpenMeasurement\/OpenMeasurementManager.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/OpenMeasurement\/OpenMeasurementManager.swift",
       "kind": "StringLiteral",
       "offset": 599,
       "length": 9,
       "value": "\"Pinchnl\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/OptOutAdvertising.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 516,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1137,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/OptOutAdvertising.swift",
       "kind": "IntegerLiteral",
-      "offset": 1111,
+      "offset": 1265,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/OptOutAdvertising.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/OptOutAdvertising.swift",
       "kind": "IntegerLiteral",
-      "offset": 1821,
+      "offset": 1975,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/OptOutAdvertising.swift",
+      "kind": "Dictionary",
+      "offset": 3545,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/OptOutAdvertising.swift",
+      "kind": "Dictionary",
+      "offset": 4733,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 460,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
       "kind": "IntegerLiteral",
       "offset": 498,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 829,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1838,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3391,
+      "offset": 6386,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutNativeAd.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutNativeAd.swift",
       "kind": "Dictionary",
-      "offset": 365,
+      "offset": 440,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutNativeAdView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutNativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 939,
+      "offset": 667,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutNativeAdView.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Views\/OptOutNativeAdView.swift",
       "kind": "Dictionary",
-      "offset": 1381,
+      "offset": 1136,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Data\/RejectionsDaoImpl.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Data\/RejectionsDaoImpl.swift",
       "kind": "StringLiteral",
       "offset": 149,
       "length": 26,
       "value": "\"OptOutGamblingPreference\""
     },
     {
-      "filePath": "\/Users\/wesleyhilhorst\/Projects\/Opt-Out\/Opt-Out SDK Source\/OptOutAdvertisingSDK\/Source\/Utils\/VisibilityObserver.swift",
+      "filePath": "\/Users\/daan\/Developer\/iOS\/opt-out-source\/OptOutAdvertisingSDK\/Source\/Utils\/VisibilityObserver.swift",
       "kind": "FloatLiteral",
       "offset": 262,
       "length": 3,

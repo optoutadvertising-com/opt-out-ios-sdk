@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name OptOutAdvertisingSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AdSupport
 import AppTrackingTransparency
 import Combine
@@ -37,16 +37,20 @@ public struct AdDetail {
 }
 public struct AdSlot {
   public let name: Swift.String
+  public let preview: Swift.String?
   public let customParams: [Swift.String : Swift.String]?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(name: Swift.String, customParams: [Swift.String : Swift.String]? = nil)
+  public init(name: Swift.String, preview: Swift.String? = nil, customParams: [Swift.String : Swift.String]? = nil)
   #endif
 }
 public struct Environment {
 }
 @_Concurrency.MainActor @preconcurrency public struct OptOutAd : SwiftUI.UIViewRepresentable {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public init(adSlot: Swift.String, deeplinkToAdScreen: Swift.String? = nil, maxSize: CoreFoundation.CGSize? = nil, onLoad: ((OptOutAdvertisingSDK.AdDetail) -> Swift.Void)? = nil, onError: ((any Swift.Error) -> Swift.Void)? = nil, onHeightUpdate: ((CoreFoundation.CGFloat) -> Swift.Void)? = nil, onWidthUpdate: ((CoreFoundation.CGFloat) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(adSlot: Swift.String, preview: Swift.String? = nil, deeplinkToAdScreen: Swift.String? = nil, maxSize: CoreFoundation.CGSize? = nil, doNotResizeToView: Swift.Bool = false, onLoad: ((OptOutAdvertisingSDK.AdDetail) -> Swift.Void)? = nil, onError: ((any Swift.Error) -> Swift.Void)? = nil, onHeightUpdate: ((CoreFoundation.CGFloat) -> Swift.Void)? = nil, onWidthUpdate: ((CoreFoundation.CGFloat) -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(adDetail: OptOutAdvertisingSDK.AdDetail, deeplinkToAdScreen: Swift.String? = nil, maxSize: CoreFoundation.CGSize? = nil, doNotResizeToView: Swift.Bool = false, onHeightUpdate: ((CoreFoundation.CGFloat) -> Swift.Void)? = nil, onWidthUpdate: ((CoreFoundation.CGFloat) -> Swift.Void)? = nil)
   #endif
   @_Concurrency.MainActor @preconcurrency public func makeUIView(context: OptOutAdvertisingSDK.OptOutAd.Context) -> OptOutAdvertisingSDK.OptOutAdView
   @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: OptOutAdvertisingSDK.OptOutAdView, context: OptOutAdvertisingSDK.OptOutAd.Context)
@@ -59,20 +63,24 @@ public struct OptOutAdvertising {
   public static func initialize(publisherId: Swift.String, environment: OptOutAdvertisingSDK.Environment, lazyLoadOffset: CoreFoundation.CGFloat = 200)
   public static func updateTransparencyAndConsent(isGdprRequired: Swift.Bool, tcfString: Swift.String)
   public static func registerMultipleAdSlots(adSlots: [OptOutAdvertisingSDK.AdSlot])
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func loadAd(slot: Swift.String, preview: Swift.String? = nil, customParams: [Swift.String : Swift.String] = [:]) -> Combine.AnyPublisher<OptOutAdvertisingSDK.AdDetail, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func loadAd(slot: Swift.String, preview: Swift.String? = nil, customParams: [Swift.String : Swift.String] = [:]) async throws -> OptOutAdvertisingSDK.AdDetail
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class OptOutAdView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public func configure(adSlot: Swift.String, deeplinkToAdScreen: Swift.String? = nil, maxSize: CoreFoundation.CGSize)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public func configure(adSlot: Swift.String, deeplinkToAdScreen: Swift.String? = nil)
+  @_Concurrency.MainActor @preconcurrency public func configure(adSlot: Swift.String? = nil, preview: Swift.String? = nil, deeplinkToAdScreen: Swift.String? = nil, maxSize: CoreFoundation.CGSize? = nil, doNotResizeToView: Swift.Bool = false)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func loadAd(completionHandler: ((_ ad: OptOutAdvertisingSDK.AdDetail) -> ())? = nil, failedHandler: ((_ error: any Swift.Error) -> ())? = nil)
   #endif
+  @_Concurrency.MainActor @preconcurrency public func showAd(adDetail: OptOutAdvertisingSDK.AdDetail)
   @_Concurrency.MainActor @preconcurrency public func addCustomParam(key: Swift.String, value: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func removeCustomParam(key: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func setOnHeightChangedListener(listener: @escaping (_ newHeight: CoreFoundation.CGFloat) -> ())
@@ -85,8 +93,9 @@ public struct OptOutAdvertising {
 }
 @_Concurrency.MainActor @preconcurrency public struct OptOutNativeAd<ViewType> : SwiftUI.UIViewRepresentable where ViewType : SwiftUICore.View {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public init(adSlot: Swift.String, customParameters: [Swift.String : Swift.String] = [:], deeplinkToAdScreen: Swift.String? = nil, onLoad: ((OptOutAdvertisingSDK.AdDetail) -> Swift.Void)? = nil, onError: ((any Swift.Error) -> Swift.Void)? = nil, viewFactory: @escaping (OptOutAdvertisingSDK.NativeAdDetail) -> ViewType)
+  @_Concurrency.MainActor @preconcurrency public init(adSlot: Swift.String?, preview: Swift.String? = nil, customParameters: [Swift.String : Swift.String] = [:], deeplinkToAdScreen: Swift.String? = nil, onLoad: ((OptOutAdvertisingSDK.AdDetail) -> Swift.Void)? = nil, onError: ((any Swift.Error) -> Swift.Void)? = nil, viewFactory: @escaping (OptOutAdvertisingSDK.NativeAdDetail) -> ViewType)
   #endif
+  @_Concurrency.MainActor @preconcurrency public init(adDetail: OptOutAdvertisingSDK.AdDetail, viewFactory: @escaping (OptOutAdvertisingSDK.NativeAdDetail) -> ViewType)
   @_Concurrency.MainActor @preconcurrency public func makeUIView(context: OptOutAdvertisingSDK.OptOutNativeAd<ViewType>.Context) -> OptOutAdvertisingSDK.OptOutNativeAdView
   @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: OptOutAdvertisingSDK.OptOutNativeAdView, context: OptOutAdvertisingSDK.OptOutNativeAd<ViewType>.Context)
   public typealias Body = Swift.Never
@@ -98,11 +107,12 @@ public typealias OptOutNativeAdViewFactory = (OptOutAdvertisingSDK.NativeAdDetai
   @_Concurrency.MainActor @preconcurrency @objc override final public func didMoveToSuperview()
   @objc deinit
   #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency final public func configure(adSlot: Swift.String, customParamaters: [Swift.String : Swift.String] = [:], deeplinkToAdScreen: Swift.String? = nil)
+  @_Concurrency.MainActor @preconcurrency final public func configure(adSlot: Swift.String?, preview: Swift.String? = nil, customParamaters: [Swift.String : Swift.String] = [:], deeplinkToAdScreen: Swift.String? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency final public func loadAd(completionHandler: ((_ ad: OptOutAdvertisingSDK.AdDetail) -> ())? = nil, failedHandler: ((_ error: any Swift.Error) -> ())? = nil, viewFactory: @escaping OptOutAdvertisingSDK.OptOutNativeAdViewFactory)
   #endif
+  @_Concurrency.MainActor @preconcurrency final public func showAd(adDetail: OptOutAdvertisingSDK.AdDetail, viewFactory: @escaping OptOutAdvertisingSDK.OptOutNativeAdViewFactory)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
