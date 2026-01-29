@@ -34,6 +34,8 @@ public struct AdDetail {
   public let noScaling: Swift.Bool
   public let noSafeFrame: Swift.Bool
   public let tags: [Swift.String]
+  public let cpm: Swift.Double?
+  public let currency: Swift.String?
   public let nativeData: OptOutAdvertisingSDK.NativeAdDetail?
 }
 public struct AdSlot {
