@@ -7,5 +7,4 @@ framework module OptOutAdvertisingSDK {
 
 module OptOutAdvertisingSDK.Swift {
   header "OptOutAdvertisingSDK-Swift.h"
-  requires objc
 }
